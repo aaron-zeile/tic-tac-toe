@@ -1,2 +1,2 @@
 # tic-tac-toe
-Program to play tic-tac-toe
+This program allows the user to play tic-tac-toe
