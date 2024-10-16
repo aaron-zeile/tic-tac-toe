@@ -190,6 +190,7 @@ def game():
 
         # check if player won
         if (winner(gameBoard) == player):
+            printBoard(gameBoard)
             print("You won!")
             break
         if (not open_spots):
@@ -204,6 +205,7 @@ def game():
 
         # check if opponent won
         if (winner(gameBoard) == opponent):
+            printBoard(gameBoard)
             print("You lost!")
             break
         if (not open_spots):
@@ -214,6 +216,7 @@ def game():
     # game end menu
     while 1:
         # when game ends, ask if user would like to play again
+        playAgain = ''
         playAgain = input("Would you like to play again? (Y/N): ")
         
         # if yes, restart game
